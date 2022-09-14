@@ -1,6 +1,6 @@
 # Robbin Robber
 
-**Conteúdo da Disciplina**: Algoritmos Ambiciosos<br>
+**Conteúdo da Disciplina**: Trabalho Final<br>
 
 ## Alunos
 
