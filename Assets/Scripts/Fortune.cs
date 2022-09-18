@@ -15,6 +15,7 @@ public class Fortune : MonoBehaviour
         weight = Random.Range(15, 30);  
     }
 
+
     void OnTriggerEnter(Collider collision) 
     {
         if (collision.tag == "Player")
@@ -27,6 +28,11 @@ public class Fortune : MonoBehaviour
 
             Destroy(this.gameObject);
         }
+    }
+
+    public void DestroyFortune()
+    {
+        Destroy(this.gameObject);
     }
 
 }

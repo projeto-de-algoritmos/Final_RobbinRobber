@@ -71,6 +71,7 @@ public class BackpackPopUp : MonoBehaviour
 
         _popUpCanvasObject.SetActive(true);
         LayoutRebuilder.ForceRebuildLayoutImmediate(_popUpObject);
+        Time.timeScale = 0f;
     }
 
     public void HideInfo()

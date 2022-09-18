@@ -97,5 +97,10 @@ public class Player : MonoBehaviour
         }     
     }
 
+    public void DestroyPlayer()
+    {
+        Destroy(this.gameObject);
+    }
+
 
 }

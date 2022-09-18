@@ -40,14 +40,20 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu () 
     {
-        Debug.Log("Loading menu...");
+        //Debug.Log("Loading menu...");
         //Time.timeScale = 1f;
-        //SceneManager.LoadScene("Menu");
+        FindObjectOfType<MazeRenderer>().DestroyMaze();
+        FindObjectOfType<Player>().DestroyPlayer();
+        FindObjectOfType<Fortune>().DestroyFortune();
+        pauseMenuUI.SetActive(false);
+        GameIsPaused = false;
+        FindObjectOfType<GameManager>().gameOver = true;
+
     }
 
     public void QuitGame() 
     {
-        Debug.Log("Quiting game...");
+        //Debug.Log("Quiting game...");
         Application.Quit();
     }
 
