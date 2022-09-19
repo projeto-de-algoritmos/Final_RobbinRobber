@@ -344,6 +344,7 @@
 "Assets/Scripts/BackpackPopUp.cs"
 "Assets/Scripts/Fortune.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MazeGenerator.cs"
 "Assets/Scripts/MazeRenderer.cs"
 "Assets/Scripts/PauseMenu.cs"

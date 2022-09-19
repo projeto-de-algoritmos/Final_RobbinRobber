@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
                 else 
                 {
+                    FindObjectOfType<MainMenu>().HideInfo();
                     FindObjectOfType<PauseMenu>().Resume();
                     FindObjectOfType<BackpackPopUp>().HideInfo();
                     Instantiate(player, Vector3.zero, Quaternion.identity);

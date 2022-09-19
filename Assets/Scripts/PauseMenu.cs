@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject[] fortunes;
 
     // Update is called once per frame
     void Update()
@@ -44,7 +45,12 @@ public class PauseMenu : MonoBehaviour
         //Time.timeScale = 1f;
         FindObjectOfType<MazeRenderer>().DestroyMaze();
         FindObjectOfType<Player>().DestroyPlayer();
-        FindObjectOfType<Fortune>().DestroyFortune();
+
+        fortunes = GameObject.FindGameObjectsWithTag("Fortune");
+        foreach(GameObject fortune in fortunes) {
+            Destroy(fortune);
+         }
+        
         pauseMenuUI.SetActive(false);
         GameIsPaused = false;
         FindObjectOfType<GameManager>().gameOver = true;
